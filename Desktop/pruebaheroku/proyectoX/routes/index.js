@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/hola', function(req, res, next){
+	//solicitud a una ruta API REST
+	res.render('saludo', { OtraCosa: 'cosa'});
+});
+
 module.exports = router;
